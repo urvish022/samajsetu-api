@@ -1,0 +1,121 @@
+#theme-switcher{
+    position: fixed;
+    top: 125px;
+    left: -208px;
+    z-index: 999999;
+    background: #fff;
+    width: 208px;
+    color: black;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	border: 1px solid #a1a1a1;
+	border-left: none;
+}
+
+#theme-switcher #switcher-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    top: -1px;
+    right: -40px;
+    background: #fff;
+    text-align: center;
+	border: 1px solid #a1a1a1;
+	border-left: none;
+	color: #212121;
+	font-size: 22px;
+}
+
+#theme-switcher #switcher-toggle:hover img {
+    opacity: 0.8;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+#theme-switcher #switcher-toggle img {
+    vertical-align: top;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+#theme-switcher .switcher-body h3 {
+    font-weight: 600;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #212121;
+}
+
+#theme-switcher .switcher-body .switcher-button {
+    margin-top: 24px
+}
+
+#theme-switcher .switcher-body button {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+	border: none;
+	border-radius: 4px;
+	outline: 0;
+}
+
+#theme-switcher .switcher-body button:nth-of-type(4n + 4){
+    margin-right: 0
+}
+
+#theme-switcher .switcher-body .theme-default{
+    background: #f93f35;
+}
+
+#theme-switcher .switcher-body .theme-blue{
+    background: #0088cc;
+}
+
+#theme-switcher .switcher-body .theme-green{
+    background: #66bb6a;
+}
+
+#theme-switcher .switcher-body .theme-pink{
+    background: #ef476f;
+}
+
+#theme-switcher .switcher-body .theme-dark{
+    background: #1f3042;
+}
+
+
+#theme-switcher .switcher-body .theme-gradient-red{
+    background: linear-gradient(to bottom, #d90647 0%, #eb402c 100%);
+    background: -webkit-linear-gradient(to bottom, #d90647 0%, #eb402c 100%);
+    background: -moz-linear-gradient(to bottom, #d90647 0%, #eb402c 100%);
+    background: -o-linear-gradient(to bottom, #d90647 0%, #eb402c 100%);
+}
+
+
+#theme-switcher .switcher-body .theme-gradient-blue{
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    background: -webkit-linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    background: -moz-linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    background: -o-linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+
+
+@media screen and (max-width: 767px) {
+    #theme_switcher {
+        top: 70px
+    }
+}

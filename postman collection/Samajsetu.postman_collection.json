@@ -1,0 +1,1660 @@
+{
+	"info": {
+		"_postman_id": "59b87db6-32ae-4fd6-9412-ff170f7e615a",
+		"name": "Samajsetu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3805781",
+		"_collection_link": "https://interstellar-comet-99187.postman.co/workspace/Imperial-Wealth~549822f8-b678-4adb-b63f-9942bc8a9693/collection/3805781-59b87db6-32ae-4fd6-9412-ff170f7e615a?action=share&source=collection_link&creator=3805781"
+	},
+	"item": [
+		{
+			"name": "Register Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name_eng",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "village_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "city_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "blood_grp",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}register_member"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Business List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "375",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}fetch_business_lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Organization List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}organization_list"
+			},
+			"response": []
+		},
+		{
+			"name": "View Dashboard UI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}view_dashboard_ui"
+			},
+			"response": []
+		},
+		{
+			"name": "View Album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{API_URL}}view_album"
+			},
+			"response": []
+		},
+		{
+			"name": "View Gallery",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{API_URL}}view_gallery",
+					"host": [
+						"{{API_URL}}view_gallery"
+					],
+					"query": [
+						{
+							"key": "album_id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Village History",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "village_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}view_village_history"
+			},
+			"response": []
+		},
+		{
+			"name": "View Business Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}view_business_cate"
+			},
+			"response": []
+		},
+		{
+			"name": "Member list of Village",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "village_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}member_list_of_village"
+			},
+			"response": []
+		},
+		{
+			"name": "View Relation Options",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}view_relation_option"
+			},
+			"response": []
+		},
+		{
+			"name": "Register Family Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ffull_name_eng",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "relation_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fcity_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fbirth_date",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fblood_grp",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fmosad",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fpiyar",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fmarried_status",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "feducation",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "foccupation",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fmobile_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "femail_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fphoto",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "country_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fbussiness_address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "village_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}register_family_member"
+			},
+			"response": []
+		},
+		{
+			"name": "Do Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fcm_token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}do_login"
+			},
+			"response": []
+		},
+		{
+			"name": "Register Matrimony",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name_eng",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "village_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sakh",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "member_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "education",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "land",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mosad",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "maritual_status",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "extra_details",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "land",
+							"value": " ",
+							"type": "text"
+						},
+						{
+							"key": "mother_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mosad_sakh",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "father_occupation",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mother_occupation",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "brother",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sister",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "income",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "father_mobile",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}register_matrimony"
+			},
+			"response": []
+		},
+		{
+			"name": "Register Memorial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name_eng",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "village_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "dead_date",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "dead_day_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_date",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "member_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_day_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_place",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_date1",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_day_name1",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_time1",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_place1",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "memorial_from",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "{{API_URL}}register_memorial"
+			},
+			"response": []
+		},
+		{
+			"name": "Register Business",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bc_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "member_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "company_name_eng",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "village_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "wp_mobile_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "website",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "timing",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "details",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ad_duration_year",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "owner_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}register_business"
+			},
+			"response": []
+		},
+		{
+			"name": "Ad Charges",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}ad_charges"
+			},
+			"response": []
+		},
+		{
+			"name": "Matrimony List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}matrimony_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Matrimony",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "matrimony_id",
+							"value": "193",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}matrimony_single"
+			},
+			"response": []
+		},
+		{
+			"name": "Memorial List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}memorial_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Family Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}family_details"
+			},
+			"response": []
+		},
+		{
+			"name": "Get App Info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{API_URL}}get_app_info"
+			},
+			"response": []
+		},
+		{
+			"name": "Career Cateogry List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}carrer_cat_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Career List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cp_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}carrer_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Career Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cpost_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}carrer_details"
+			},
+			"response": []
+		},
+		{
+			"name": "News List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}news_list"
+			},
+			"response": []
+		},
+		{
+			"name": "News Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "news_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}news_detail"
+			},
+			"response": []
+		},
+		{
+			"name": "Event Lists",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}event_lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Event Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "event_detail",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}event_detail"
+			},
+			"response": []
+		},
+		{
+			"name": "Proud List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}proud_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Proud Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pr_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}proud_detail"
+			},
+			"response": []
+		},
+		{
+			"name": "Team details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}team_details"
+			},
+			"response": []
+		},
+		{
+			"name": "View Village and Country",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}view_village_and_country"
+			},
+			"response": []
+		},
+		{
+			"name": "View Village",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "family_count",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}view_village"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Own Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}fetch_own_profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Family list Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}fetch_family_list_profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{API_URL}}get_transaction_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Generate OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "urvish31797@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}generate_otp"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}update_password"
+			},
+			"response": []
+		},
+		{
+			"name": "Business List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}business_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Business Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "business_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}business_detail"
+			},
+			"response": []
+		},
+		{
+			"name": "Update New Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}update_new_password"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Own Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "29",
+							"type": "text"
+						},
+						{
+							"key": "full_name_eng",
+							"value": "patel hardik mukeshbhai",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "city_name",
+							"value": "surat",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "21-04-1992",
+							"type": "text"
+						},
+						{
+							"key": "blood_grp",
+							"value": "o+",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "949494672",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "1, varacha road ,surat bus stand",
+							"type": "text"
+						},
+						{
+							"key": "email_id",
+							"value": "hardik12@gmil.com",
+							"type": "text"
+						},
+						{
+							"key": "sakh",
+							"value": "charola",
+							"type": "text"
+						},
+						{
+							"key": "mosad",
+							"value": "santhal",
+							"type": "text"
+						},
+						{
+							"key": "married_status",
+							"value": "divorced",
+							"type": "text"
+						},
+						{
+							"key": "education",
+							"value": "b.e mechinical eng.",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "job in ratnamani steel company",
+							"type": "text"
+						},
+						{
+							"key": "wp_mobile_no",
+							"value": "843734847",
+							"type": "text"
+						},
+						{
+							"key": "email_id",
+							"value": "haj@dsajd.com\t",
+							"type": "text"
+						},
+						{
+							"key": "bussiness_address",
+							"value": "dsadsdad",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}update_own_profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Family Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}update_family_profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Matrimony Lists",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}fetch_matrimony_lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Memorial Lists",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}fetch_memorial_lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Matrimony Lists",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name_eng",
+							"value": "amish g patel",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sakh",
+							"value": "sukhdia",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "23-04-1997",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "education",
+							"value": "computer eng",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "5.6 ft",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "30 kg",
+							"type": "text"
+						},
+						{
+							"key": "mosad",
+							"value": "jamnaagar",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "job",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "odhava",
+							"type": "text"
+						},
+						{
+							"key": "maritual_status",
+							"value": "single",
+							"type": "text"
+						},
+						{
+							"key": "extra_details",
+							"value": "sadnaksd",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "98978667",
+							"type": "text"
+						},
+						{
+							"key": "land",
+							"value": "13 vigha",
+							"type": "text"
+						},
+						{
+							"key": "mother_name",
+							"value": "jamna ben",
+							"type": "text"
+						},
+						{
+							"key": "mosad_sakh",
+							"value": "jabara",
+							"type": "text"
+						},
+						{
+							"key": "father_occupation",
+							"value": "job",
+							"type": "text"
+						},
+						{
+							"key": "mother_occupation",
+							"value": "navara",
+							"type": "text"
+						},
+						{
+							"key": "brother",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "sister",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "income",
+							"value": "7,00,000",
+							"type": "text"
+						},
+						{
+							"key": "father_mobile",
+							"value": "9897765555",
+							"type": "text"
+						},
+						{
+							"key": "matrimony_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}update_matrimony_lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Business List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}fetch_business_lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Business Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "business_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "owner_name",
+							"value": "patel urvish ghanshyambhai",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "new ranip",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "c-303 kalasagar heights",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9574202214",
+							"type": "text"
+						},
+						{
+							"key": "wp_mobile_no",
+							"value": "8686868686",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "urvish31797@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "website",
+							"value": "www.techwebsoft.com",
+							"type": "text"
+						},
+						{
+							"key": "timing",
+							"value": "10 am - 12 pm",
+							"type": "text"
+						},
+						{
+							"key": "details",
+							"value": "we develop website , app, softwares",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": "h.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}update_business_details"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Memorial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "delete_memorial",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}delete_memorial"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Matrimony",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "matrimony_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}delete_matrimony"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Family Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}delete_family_member"
+			},
+			"response": []
+		},
+		{
+			"name": "Save FCM Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "ajsdyjyjqaejsad",
+							"type": "text"
+						},
+						{
+							"key": "fcm_token",
+							"value": "!ksadkc_c131bhjsdabshjh!*9823nsad!@",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}save_fcm_token"
+			},
+			"response": []
+		},
+		{
+			"name": "Blood List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{API_URL}}blood_list"
+			},
+			"response": []
+		},
+		{
+			"name": "Blood Detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bd_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}blood_detail"
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Matrimony",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{API_URL}}filter_matrimony"
+			},
+			"response": []
+		}
+	]
+}
